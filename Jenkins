@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Requirement') {
+            steps {
+                echo 'Gathering the requirement'
+            }
+        }
+        stage('Analysis') {
+            steps {
+                echo 'Analyse the requirement'
+            }
+        }
+        stage('Development') {
+            steps {
+                echo 'Build the code'
+            }
+        }
+        stage('Testing') {
+            steps {
+                echo 'Test the code to get quality product'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Deploy the product to customer'
+            }
+        }
+        
+    }
+}
